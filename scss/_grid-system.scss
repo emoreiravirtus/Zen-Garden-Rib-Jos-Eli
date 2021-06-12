@@ -24,5 +24,6 @@ header {
 
 .participation {
     @include col($half-row);
+    background: blue;
 }
 

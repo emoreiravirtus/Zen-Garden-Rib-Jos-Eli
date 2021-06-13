@@ -1,6 +1,10 @@
 @import 'variables';
+@import 'spacing';
 @import 'mixins';
-@import 'grid-system';
+@import './sections/header';
+@import './sections/main';
+@import './sections/footer';
+@import './sections/sidebar';
 
 *,
 *:before,

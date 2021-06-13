@@ -1,0 +1,10 @@
+aside {
+    @include row();
+    @extend .p-40;
+}
+
+.sidebar {
+    @include col($half-row);
+    background-color: $primary-color;
+    font-family: $secondary-font;
+}

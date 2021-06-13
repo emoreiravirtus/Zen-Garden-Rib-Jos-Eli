@@ -1,0 +1,34 @@
+.supporting {
+    @extend .p-40;
+    @extend .m-t-50;
+    @include row();
+    background: $quaternary-color;
+    color: $light;
+    font-family: $secondary-font;
+}
+
+.explanation {
+    background: $secondary-color;
+    color: $dark;
+    @extend .p-40;
+    @include col($half-row);
+}
+
+.participation {
+    @extend .p-40;
+    @include col($half-row);
+    background: $tertiary-color;
+    color: $light;
+}
+
+.benefits {
+    @extend .p-40;
+    background: $secondary-color;
+    color: $light;
+}
+
+.requirements {
+    @extend .p-40;
+    background: $primary-color;
+    color: $dark;
+}

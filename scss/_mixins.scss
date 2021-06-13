@@ -13,3 +13,12 @@
 @mixin offset($offset-num) {
     margin-left: $one-column * $offset-num;
 }
+
+@mixin center-text() {
+    text-align: center;
+}
+
+@mixin border($color: gray){
+    border: 1px solid $color;
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.397);
+}

@@ -1,27 +1,27 @@
 .intro {
-    @extend .p-40;
-    @include row();
-    font-family: $primary-font;
+	@extend .p-40;
+	@include row();
+	font-family: $primary-font;
 }
 
 header {
-    background: $primary-color;
-    color: $light;
-    @extend .p-40;
-    @include center-text();
-    @include col($full-row);
+	background: $primary-color;
+	color: red;
+	@extend .p-40;
+	@include center-text();
+	@include col($full-row);
 }
 
 .summary {
-    @extend .p-40;
-    @include col($half-row);
-    background: $primary-color;
-    color: $light;
+	@extend .p-40;
+	@include col($half-row);
+	background: $primary-color;
+	color: $light;
 }
 
 .preamble {
-    @extend .p-40;
-    background: $secondary-color;
-    color: $dark;
-    @include col($half-row);
+	@extend .p-40;
+	background: $secondary-color;
+	color: $dark;
+	@include col($half-row);
 }

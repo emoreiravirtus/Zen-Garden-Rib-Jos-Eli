@@ -1,7 +1,7 @@
 footer {
-    @extend .m-t-40;
-    @extend .p-40;
-    @include col($full-row);
-    background: $secondary-color;
-    color: $light;
+	@extend .m-t-40;
+	@extend .p-40;
+	@include col($full-row);
+	background: $secondary-color;
+	color: blue;
 }

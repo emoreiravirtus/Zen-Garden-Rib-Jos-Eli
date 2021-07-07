@@ -5,7 +5,7 @@
 }
 
 header {
-    background: $tertiary-color;
+    background: $primary-color;
     color: $light;
     @extend .p-40;
     @include center-text();

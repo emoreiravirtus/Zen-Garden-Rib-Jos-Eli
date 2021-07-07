@@ -488,7 +488,7 @@
 }
 
 header {
-  background: #3e5330;
+  background: #88a090;
   color: #fafafa;
   text-align: center;
   flex: 0 0 100%;
@@ -565,6 +565,14 @@ aside {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: space-between;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

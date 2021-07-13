@@ -1,6 +1,7 @@
 .intro {
-    @extend .p-40;
+    @extend .p-15;
     @include row();
+    @include col(8);
     font-family: $primary-font;
 }
 

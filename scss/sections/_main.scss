@@ -5,6 +5,10 @@
     background: $quaternary-color;
     color: $light;
     font-family: $secondary-font;
+
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
 }
 
 .explanation {
@@ -19,6 +23,19 @@
     @include col($half-row);
     background: $tertiary-color;
     color: $light;
+    line-height: 31px;
+
+    a {
+        margin: 0 2px;
+        padding: 0 2px;
+        background-color: $light;
+        color: $dark;
+    
+        &:hover {
+            background: $dark;
+            color: $light;
+        }
+    }
 }
 
 .benefits {

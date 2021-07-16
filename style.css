@@ -654,6 +654,14 @@ h3 {
   aside .wrapper {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+  }
+
+  .intro {
+    flex-flow: column wrap;
+    align-items: stretch;
+    height: 100%;
+    flex: 0 0 100%;
   }
 }
 

@@ -1,24 +1,33 @@
 @mixin row() {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: space-between;
-    height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: space-between;
+	height: 100%;
 }
 
 @mixin col($span-num) {
-    flex: 0 0 $one-column * $span-num;
+	flex: 0 0 $one-column * $span-num;
 }
 
 @mixin offset($offset-num) {
-    margin-left: $one-column * $offset-num;
+	margin-left: $one-column * $offset-num;
 }
 
 @mixin center-text() {
-    text-align: center;
+	text-align: center;
 }
 
-@mixin border($color: gray){
-    border: 1px solid $color;
-    box-shadow: 0 0 15px rgba(128, 128, 128, 0.397);
+@mixin border($color: gray) {
+	border: 1px solid $color;
+	box-shadow: 0 0 15px rgba(128, 128, 128, 0.397);
+}
+
+@mixin footer {
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+
+	&:hover {
+		color: $light;
+	}
 }

@@ -1,7 +1,8 @@
 .intro {
-	@extend .p-40;
-	@include row();
-	font-family: $primary-font;
+    @extend .p-15;
+    @include row();
+    @include col(8);
+    font-family: $primary-font;
 }
 
 header {

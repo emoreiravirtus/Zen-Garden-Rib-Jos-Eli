@@ -3,5 +3,35 @@ footer {
 	@extend .p-40;
 	@include col($full-row);
 	background: $secondary-color;
-	color: blue;
+	color: $light;
+	display: inline-flex;
+	justify-content: center;
+	gap: 70px;
+}
+
+.DaveShea {
+	font-size: 25px;
+	text-align: left;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.zen-validate-html {
+	@include footer;
+}
+
+.zen-validate-css {
+	@include footer;
+}
+
+.zen-license {
+	@include footer;
+}
+
+.zen-accessibility {
+	@include footer;
+}
+
+.zen-github {
+	@include footer;
 }

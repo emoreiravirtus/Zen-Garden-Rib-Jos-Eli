@@ -5,6 +5,7 @@
 @import './sections/main';
 @import './sections/footer';
 @import './sections/sidebar';
+@import './sections/page-wrapper';
 
 *,
 *:before,
@@ -14,8 +15,32 @@
     padding: 0;
 }
 
-.page-wrapper {
-    @include row();
+body {
+    background-color: $secondary-color;
+    background-image: url(../c99a77d642aa08cd728e86861fe90248.jpg);
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: $tertiary-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s;
+
+    &:hover {
+        border-bottom: 3px solid $tertiary-color;
+    }
+}
+
+abbr {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: xxx-large;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 

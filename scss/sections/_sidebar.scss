@@ -1,10 +1,30 @@
 aside {
-    @include row();
-    @extend .p-40;
-}
-
-.sidebar {
-    @include col($half-row);
-    background-color: $primary-color;
+    padding-top: 60px;
+    @include col(3);
+    @extend .p-10;
     font-family: $secondary-font;
+    background-color: $primary-color;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    border-radius: 20px 0 0 50px;
+
+    h3 {
+        color: $dark;
+        background: darken($light, 15%);
+        text-align: center;
+        padding: 6px 0;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px darken($primary-color, 15%);
+        font-size: medium;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 5px;
+
+        a {
+            text-transform: capitalize;
+        }
+    }
 }

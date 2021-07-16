@@ -43,11 +43,9 @@ h3 {
 	text-transform: uppercase;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.sidebar {
-		border-radius: 0;
-		flex: 1 0 calc(100% - 15px);
-		margin: auto;
+		@include fill-row(15);
 	}
 	aside .wrapper {
 		display: flex;
@@ -55,5 +53,12 @@ h3 {
 		gap: 10px;
 		width: 100%;
 		justify-content: space-evenly;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	aside .wrapper {
+		flex-direction: column;
+		justify-content: center;
 	}
 }

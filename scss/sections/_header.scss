@@ -1,28 +1,70 @@
 .intro {
-    @extend .p-15;
     @include row();
-    @include col(8);
     font-family: $primary-font;
-}
 
-header {
-	background: $primary-color;
-	color: red;
-	@extend .p-40;
-	@include center-text();
-	@include col($full-row);
-}
+	@media screen and (min-width: 1024px) {
+		@include col(8);
+		padding-left: 15px;
+	}
 
-.summary {
-	@extend .p-40;
-	@include col($half-row);
-	background: $primary-color;
-	color: $light;
-}
+	header {
+		-webkit-box-shadow: 0px 0px 0px 5px lighten($primary-color, 50%), inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px darken($primary-color, 20%), 5px 5px 15px 5px rgba(87,146,255,0); 
+		box-shadow: 0px 0px 0px 5px lighten($primary-color, 50%), inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px darken($primary-color, 20%), 5px 5px 15px 5px rgba(87,146,255,0);
+		clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+		overflow: hidden;
+		text-align: inherit;
+		background: $primary-color;
+		background: linear-gradient(90deg, lighten($tertiary-color, 10%) 0%, lighten($tertiary-color, 20%) 32%, lighten($tertiary-color, 20%) 69%, lighten($tertiary-color, 10%) 100%);
+		color: $light;
+		@extend .p-40;
+		text-transform: uppercase;
+		@include col($full-row);
+	}
 
-.preamble {
-	@extend .p-40;
-	background: $secondary-color;
-	color: $dark;
-	@include col($half-row);
+	.summary {
+		@extend .p-20;
+		@include col($half-row);
+		background: darken($primary-color, 20%);
+		color: $light;
+
+		a {
+			color: darken($primary-color, 50%);
+		}
+
+		@media screen and (max-width: 1024px) {
+			@include col($full-row);
+		}
+
+	}
+
+	.preamble {
+		@extend .p-40;
+		background: linear-gradient(90deg, darken($secondary-color, 9%) 0%, lighten($secondary-color, 20%) 32%, lighten($secondary-color, 20%) 69%, darken($secondary-color, 10%) 100%);
+		color: $dark;
+		text-align: center;
+		@include col($half-row);
+
+		h3 {
+			background: -webkit-linear-gradient(to right, $tertiary-color 0%, $primary-color 100%);
+			background: -moz-linear-gradient(to right, $tertiary-color 0%, $primary-color 100%);
+			background: linear-gradient(to right, $tertiary-color 0%, $primary-color 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		& > p:nth-child(2)::first-letter {
+			font-size: 40px;
+			font-weight: 600;
+			background: -webkit-linear-gradient(to right, lighten($primary-color, 20%) 0%, $primary-color 100%);
+			background: -moz-linear-gradient(to right, lighten($primary-color, 20%) 0%, $primary-color 100%);
+			background: linear-gradient(to right, lighten($primary-color, 20%) 0%, $primary-color 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		@media screen and (max-width: 1024px) {
+			@include col($full-row);
+		}
+	}
+
 }

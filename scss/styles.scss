@@ -38,9 +38,17 @@ abbr {
 }
 
 h3 {
-    font-size: xxx-large;
+    font-size: large;
     margin-bottom: 15px;
     text-transform: uppercase;
+
+    @media screen and(max-width: 480px) {
+		font-size: large;
+    }
+}
+
+p {
+    font-size: 14px;
 }
 
 

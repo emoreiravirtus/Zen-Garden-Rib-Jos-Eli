@@ -1,21 +1,20 @@
 aside {
-    padding-top: 60px;
+    margin-top: 60px;
     @include col(3);
     @extend .p-10;
     font-family: $secondary-font;
-    background-color: $primary-color;
+    background: linear-gradient(90deg, darken($primary-color, 9%) 0%, lighten($primary-color, 2%) 32%, lighten($primary-color, 2%) 69%, darken($primary-color, 10%) 100%);
     -webkit-box-ordinal-group: 2;
     -moz-box-ordinal-group: 2;
     box-ordinal-group: 2;
-    border-radius: 20px 0 0 50px;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 
     h3 {
-        color: $dark;
-        background: darken($light, 15%);
-        text-align: center;
-        padding: 6px 0;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px darken($primary-color, 15%);
+        color: darken($primary-color, 35%);
+        padding: 16px 0;
         font-size: medium;
     }
 
@@ -25,6 +24,8 @@ aside {
 
         a {
             text-transform: capitalize;
+            color: darken($primary-color, 35%);
+            font-weight: 100;
         }
     }
 }

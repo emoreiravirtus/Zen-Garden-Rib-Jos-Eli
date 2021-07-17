@@ -1,29 +1,47 @@
 .supporting {
-	@extend .p-40;
 	@extend .m-t-50;
 	@include row();
 	background: $quaternary-color;
 	color: $light;
 	font-family: $secondary-font;
-
 	-webkit-box-ordinal-group: 3;
 	-moz-box-ordinal-group: 3;
 	box-ordinal-group: 3;
+
+	@media screen and (min-width: 830px) {
+		clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+		padding: 40px;
+	}
 }
 
 .explanation {
 	background: $secondary-color;
 	color: $dark;
-	@extend .p-40;
-	@include col($half-row);
+	@extend .p-10;
+	@include col(7);
+    z-index: 2;
+
+	@media screen and (max-width: 480px) {
+		@include col(12);
+	}
 }
 
 .participation {
-	@extend .p-40;
-	@include col($half-row);
+
+	@extend .p-10;
 	background: $tertiary-color;
 	color: $light;
 	line-height: 31px;
+	@include col(12);
+
+	@media screen and (min-width: 480px) {
+		padding-top: 175px;
+		margin-top: -65px;
+		@include col(4);
+		padding-left: 40px;
+		margin-left: -20px;
+		z-index: 1;
+	}
 
 	a {
 		margin: 0 2px;
@@ -39,13 +57,20 @@
 }
 
 .benefits {
-	@extend .p-40;
+	@extend .p-10;
 	background: $secondary-color;
 	color: $light;
+
+	@media screen and (max-width: 580px) {
+		@include col(12);
+	}
 }
 
 .requirements {
-	@extend .p-40;
+	@extend .p-10;
 	background: $primary-color;
 	color: $dark;
+	@media screen and (max-width: 580px) {
+		@include col(12);
+	}
 }
